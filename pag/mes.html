@@ -1,0 +1,140 @@
+<!-- PreEntrega3 + Constanza Vilchez -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control-mes</title>
+    <link rel="shortcut icon" href="../img/Logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header class="header">
+
+        <div class="logo_empresa"><!-- Logo de la empresa -->
+            <img src="../img/Logo.jpg" alt="logo_empresa"> 
+        </div>
+     
+        <h1> Mes X año Y</h1>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="./home.html" target="_self">Home</a></li>
+                <li><a href="./enlaces_cuentas.html" target="_self">Enlaces cuentas </a></li>
+                <li><a href="./resolucion_de_dudas.html" target="_self">Resolución de dudas</a></li>
+                <li><a href="./conceptos.html" target="_self">Conceptos</a></li>
+                <li><a href="./contactos.html" target="_self">Contactos</a></li>
+                <li><a href="../index.html" target="_self">Cerrar sesión</a></li>
+            </ul>
+        </nav>         
+
+    </header>
+
+    <main>
+
+        <!-- Indica si se ese mes se puede realizar pagos en el presente -->
+        <input type="radio" name="actividad" value="si">Activo
+        <input type="radio" name="actividad" value="no">No activo
+
+        <p><strong>Recordar:</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolorem voluptatibus omnis, optio enim perspiciatis iste quo error, amet esse, dignissimos earum fuga aperiam? Aliquam adipisci tenetur quas ad libero? </p>
+        
+        <h2>Documentación primordial (para la corredora)</h2>
+        
+        <br>
+
+        <p><strong>Arriendo</strong></p>
+        <label for="estatus"></label>
+        <select name="estatus" id="estatus">
+            <option value="01">Enviado</option>
+            <option value="02">Recibido</option>
+            <option value="03">Rechazado</option>
+            <option value="04">Aprobado</option>
+        </select>
+        <br>
+        <label for="adjunto">Adjuntar</label>
+        <input type="file" name="adjunto" id="adjunto">
+
+        <p><strong>Gastos comunes</strong></p>
+        <label for="estatus"></label>
+        <select name="estatus" id="estatus">
+            <option value="05">Enviado</option>
+            <option value="06">Recibido</option>
+            <option value="07">Rechazado</option>
+            <option value="08">Aprobado</option>
+        </select>
+        <br>
+        <label for="adjunto">Adjuntar</label>
+        <input type="file" name="adjunto" id="adjunto">
+
+        <br>
+
+        <p><strong>Luz</strong></p>
+        <label for="estatus"></label>
+        <select name="estatus" id="estatus">
+            <option value="09">Enviado</option>
+            <option value="10">Recibido</option>
+            <option value="11">Rechazado</option>
+            <option value="12">Aprobado</option>
+        </select>
+        <br>
+        <label for="adjunto">Adjuntar</label>
+        <input type="file" name="adjunto" id="adjunto">
+
+        <br>
+
+        <p><strong>Agua</strong></p>
+        <label for="estatus"></label>
+        <select name="estatus" id="estatus">
+            <option value="13">Enviado</option>
+            <option value="14">Recibido</option>
+            <option value="15">Rechazado</option>
+            <option value="16">Aprobado</option>
+        </select>
+        <br>
+        <label for="adjunto">Adjuntar</label>
+        <input type="file" name="adjunto" id="adjunto">
+
+        <br>
+        <p><strong>Gas</strong></p>
+        <label for="estatus"></label>
+        <select name="estatus" id="estatus">
+            <option value="17">Enviado</option>
+            <option value="18">Recibido</option>
+            <option value="19">Rechazado</option>
+            <option value="20">Aprobado</option>
+        </select>
+        <br>
+        <label for="adjunto">Adjuntar</label>
+        <input type="file" name="adjunto" id="adjunto">
+
+        <br><br>
+
+        <label for="comentario1">Comentarios para la corredora</label>
+
+        <br>
+
+        <textarea name="" id="comentario1" cols="30" rows="10" placeholder="Comentario"></textarea>
+
+        <br><br>
+
+        <h2>Otros comprobantes de pago (no se deben enviar a la corredora)</h2>
+       
+        <br>
+
+        <p><strong>Internet</strong></p>
+        <label for="adjunto">Adjuntar</label>
+        <input type="file" name="adjunto" id="adjunto">
+        <br><br>
+        
+        <label for="comentario2">Comentarios para uno</label>
+
+        <br>
+        
+        <textarea name="" id="comentario2" cols="30" rows="10" placeholder="Comentario"></textarea>
+    </main>
+
+    <footer>
+        <p>@Marca registrada</p>
+    </footer> 
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!-- PreEntrega3 + Constanza Vilchez -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control-Home</title>
+    <link rel="shortcut icon" href="../img/Logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../scss/main.css"><!-- Estilo en SASS -->
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo_empresa"><!-- Logo de la empresa -->
+            <img src="../img/Logo.jpg" alt="logo_empresa"> 
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="./enlaces_cuentas.html" target="_self">Enlaces cuentas </a></li>
+                <li><a href="./resolucion_de_dudas.html" target="_self">Resolución de dudas</a></li>
+                <li><a href="./conceptos.html" target="_self">Conceptos</a></li>
+                <li><a href="./contactos.html" target="_self">Contactos</a></li>
+                <li><a href="../index.html" target="_self">Cerrar sesión</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <main>
+        <section id="datospersonales">
+        <img src="../img/Avatar.jpg" alt="avatar personal">
+        
+        <div class="boxTexto--center">
+            <h1>Nombre</h1> 
+            <h2>Año actual/Dirección</h2>
+        </div>
+        </section>
+          
+        <table border="1" cellpadding="5">
+            <tr>
+                <th>Estado (completo/incompleto)</th><!-- Encabezado de la tabla -->
+                <th>Mes</th>
+                <th>Arriendo</th>
+                <th>Gastos comunes</th>
+                <th>Luz</th>
+                <th>Agua</th>
+                <th>Gas</th>
+                <th>Internet</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <div id="resumentabla">
+                        <strong><p>Completo</p></strong><!-- Fil 2 Col 1 -->
+                    </div>
+                </td>
+                <td> <!-- Fil 2 Col 2 (mes)-->
+                    <nav id="mes">
+                    <ul>
+                        <li><a class="botonBase" href="./mes.html" target="_self">Mes X año Y</a></li> <!-- Notar que el boton se creo con la clase (su estructura se encuentra en "main.scss") -->
+                    </ul>
+                    </nav> 
+                </td>
+                <td>$10</td><!-- Fil 2 Col 3 (Arriendo) -->
+                <td>$1</td> <!-- GGCC -->
+                <td>$2</td><!-- Luz -->
+                <td>$1</td><!-- Agua -->
+                <td>$3</td><!-- Gas -->
+                <td>$2</td><!-- Internet -->
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <p>@Marca registrada</p>
+    </footer>
+
+</body>
+</html>

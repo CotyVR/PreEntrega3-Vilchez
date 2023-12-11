@@ -1,0 +1,82 @@
+/* PreEntrega2 + Constanza Vilchez */
+
+
+/* Estructura general */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Calibri;
+}
+
+header{/* Corresponde al logo de mi empresa + los enlaces entre MIS paginas*/
+    background-color: rgb(188, 185, 185);
+    padding: 10px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo_empresa{/* Marco del logo de la empresa */
+    border: 5px solid black;
+}
+
+header .menu ul{/* Marco que contiene MIS enlaces del menú */
+    display: flex;
+    list-style: none;
+    gap: 5px;
+    width: 100%;
+    height: auto;
+}
+
+header .menu ul li a{/* Botones para cada botón */
+    text-decoration: none;
+    padding: 3px 10px;
+    background-color: greenyellow;
+    border-radius: 20px;
+}
+
+header .menu ul li a:hover{/* Cambia el color del botón cuando lo toca el mouse */
+    background-color: black;
+    color: white;
+}
+
+body{/* Color de fondo de pantalla. Estoy pensando si lo quiero blanco o de otro color */
+    background-color: rgb(251, 248, 248);
+}
+
+footer{/* Corresponde al marco del footer */
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Times New Roman';
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Página "Home" */
+
+table{/* Corresponde a la tabla de home */
+    background-color: gainsboro;
+    border: aquamarine;
+}
+
+#mes{/* Corresponde al mes que se encuentra en la tabla. Es para destacar que hay un enlace */
+    background-color: aquamarine;
+}
+
+#datospersonales{/* Corresponde a los datos personales en el Home */
+    background-color: gold;
+}
+
+#datospersonales img{/* Corresponde al borde del avatar en el Home */
+    width: 96px;
+    height: 96px;
+    border: 3px solid black; 
+}
+
+#datospersonales h1{/* Corresponde a los datos personales en el Home */
+    color: blue;
+}

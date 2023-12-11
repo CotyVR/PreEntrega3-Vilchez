@@ -1,0 +1,32 @@
+header{/* Corresponde al logo de mi empresa + los enlaces entre MIS paginas*/
+    background-color: rgb(188, 185, 185);
+    padding: 10px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    & .logo_empresa{/* Marco del logo de la empresa */
+        border: 5px solid black;
+    }
+
+    & .menu ul{/* Marco que contiene MIS enlaces del menú */
+        display: flex;
+        list-style: none;
+        gap: 5px;
+        width: 100%;
+        height: auto;
+
+       & li a{/* Botones para cada botón */
+            text-decoration: none;
+            padding: 3px 10px;
+            background-color: greenyellow;
+            border-radius: 20px;
+
+            &:hover{/* Cambia el color del botón cuando lo toca el mouse */
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/* Estructura general */
+header { /* Corresponde al logo de mi empresa + los enlaces entre MIS paginas*/
+  background-color: rgb(188, 185, 185);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo_empresa { /* Marco del logo de la empresa */
+  border: 5px solid black;
+}
+header .menu ul { /* Marco que contiene MIS enlaces del menú */
+  display: flex;
+  list-style: none;
+  gap: 5px;
+  width: 100%;
+  height: auto;
+}
+header .menu ul li a { /* Botones para cada botón */
+  text-decoration: none;
+  padding: 3px 10px;
+  background-color: greenyellow;
+  border-radius: 20px;
+}
+header .menu ul li a:hover { /* Cambia el color del botón cuando lo toca el mouse */
+  background-color: black;
+  color: white;
+}
+
+footer { /* Corresponde al marco del footer que aparece en todas las paginas*/
+  background-color: black;
+  color: aliceblue;
+  font-family: "Times New Roman";
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Calibri;
+}
+* body { /* Color de fondo de pantalla. Estoy pensando si lo quiero blanco o de otro color */
+  background-color: rgb(251, 248, 248);
+}
+
+/* General: extend para textos, con class --: Recordar que cuando vayas a crear la clase en el HTML no se debe incluir el punto inicial "." */
+.boxTexto, .boxTexto--center, .boxTexto--right { /* Si hay texto, esta clase me permite crear una estructura general */
+  padding: 20px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.boxTexto--right { /* Permite que la estructura general, vaya a la derecha */
+  text-align: right;
+}
+
+.boxTexto--center { /* Permite que la estructura general, vaya al centro */
+  text-align: center;
+}
+
+/* Mixin */
+/* Botones --> Recordar que cuando lo llames en el HTML no se debe incluir el punto*/
+.botonBase { /* Boton general */
+  display: inline-block;
+  padding: 2px 5px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: calibri;
+  justify-content: center;
+  background-color: blue;
+  border: 2px solid blue;
+  color: white;
+}
+.botonBase:hover {
+  background-color: black;
+  border: 2px solid black;
+}
+
+.botonEspecial { /* Botón para casos especiales, ejemplo "Resetear", "olvido de contraseña", entre otras */
+  display: inline-block;
+  padding: 2px 5px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: calibri;
+  justify-content: center;
+  background-color: yellow;
+  border: 2px solid yellow;
+  color: black;
+}
+.botonEspecial:hover {
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+}
+
+/* Página index */
+div.boxModel { /* Corresponde al margen de index o de inicio*/
+  background-color: aqua;
+  width: 400px;
+  height: auto;
+  margin: 100px auto;
+  border: 2px solid blue;
+  padding: 20px;
+}
+div.boxModel header { /* Borde que contiene la imagen del avatar en index */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 3px solid black;
+}
+div.boxModel h1 { /* marco del "Bienvenido" */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+div.boxModel .divider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.boxModel main form { /* Marco del formulario */
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 20px;
+}
+div.boxModel .no-ingreso { /* Formato de los botones que serian para NO ingresar */
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Página "Home" */
+#datospersonales { /* Corresponde a los datos personales en el Home */
+  background-color: gold;
+}
+#datospersonales img { /* Corresponde al borde del avatar en el Home */
+  width: 96px;
+  height: 96px;
+  border: 3px solid black;
+}
+#datospersonales h1 { /* Corresponde a los datos personales en el Home */
+  color: blue;
+}
+
+table { /* Corresponde a la tabla de home */
+  background-color: gainsboro;
+  border: aquamarine;
+}
+
+#resumentabla p {
+  color: green;
+}
+
+/* Página "Enlaces cuentas" */
+#empresas_externas { /* Corresponde al marco en <Enlaces_cuentas> donde se indica la subcategoría + logo + enlace */
+  padding: 50px;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#empresas_externas img { /* Corresponde a los logos de las empresas EXTERNAS en <enlaces_cuentas>. Si deseo colocar imagenes de otro tipo, debe ser fuera de este marco */
+  width: 200px;
+  height: 150px;
+  border: 3px solid black;
+}
+#empresas_externas p a { /* Corresponde al boton de todos los enlaces. Lo hice aquí, porque quería que el contenido (en esta página) fuese de extremo a extremo del marco */
+  display: flex;
+  justify-content: center;
+}
+#empresas_externas .agua { /* Corresponde al marco en <Enlaces_cuentas> donde se indica el logo + enlace del grupo "agua" */ }
+#empresas_externas .agua h2 { /* Marco para "Agua" en <enlaces_cuentas>*/
+  background-color: rgb(0, 149, 255);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+#empresas_externas .luz { /* Corresponde al marco en <Enlaces_cuentas> donde se indica el logo + enlace del grupo "Luz" */ }
+#empresas_externas .luz h2 { /* Marco para "Luz" en <enlaces_cuentas>*/
+  background-color: rgba(255, 242, 0, 0.927);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+#empresas_externas .gas { /* Corresponde al marco en <Enlaces_cuentas> donde se indica el logo + enlace del grupo "Gas" */ }
+#empresas_externas .gas h2 { /* Marco para "Gas" en <enlaces_cuentas>*/
+  background-color: orange;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */
