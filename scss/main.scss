@@ -175,7 +175,7 @@ table{/* Corresponde a la tabla de home */
         justify-content: center;
     }
 
-    & .agua{/* Corresponde al marco en <Enlaces_cuentas> donde se indica el logo + enlace del grupo "agua" */    
+    .agua{/* Corresponde al marco en <Enlaces_cuentas> donde se indica el logo + enlace del grupo "agua" */    
         & h2 { /* Marco para "Agua" en <enlaces_cuentas>*/
             background-color: rgb(0, 149, 255);
             border-radius: 5px;
@@ -184,7 +184,7 @@ table{/* Corresponde a la tabla de home */
         }
     }
 
-    & .luz{/* Corresponde al marco en <Enlaces_cuentas> donde se indica el logo + enlace del grupo "Luz" */ 
+    .luz{/* Corresponde al marco en <Enlaces_cuentas> donde se indica el logo + enlace del grupo "Luz" */ 
         h2{ /* Marco para "Luz" en <enlaces_cuentas>*/
             background-color: rgba(255, 242, 0, 0.927);
             border-radius: 5px;
@@ -193,7 +193,7 @@ table{/* Corresponde a la tabla de home */
         }
     }
     
-    & .gas{/* Corresponde al marco en <Enlaces_cuentas> donde se indica el logo + enlace del grupo "Gas" */ 
+    .gas{/* Corresponde al marco en <Enlaces_cuentas> donde se indica el logo + enlace del grupo "Gas" */ 
         h2{/* Marco para "Gas" en <enlaces_cuentas>*/
             background-color: orange;
             border-radius: 5px;
