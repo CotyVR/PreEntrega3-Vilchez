@@ -19,7 +19,9 @@
     <div class="boxModel">
         
         <header>
-        <img src="./img/Logo.jpg" alt="Logo_empresa">
+            <div class="marcoHeader">
+                <img src="./img/Logo.jpg" alt="Logo_empresa">
+            </div>
         </header>
        
         <h1>Bienvenido</h1>
@@ -44,15 +46,17 @@
 
         </form>
 
-        <a class="botonBase"  href="./pag/home.html" target="_self">Ingresar</a><!-- Corresponde al botón que me permite ingresar al Home, si los datos ingresados son los correctos. No lo hice con Input Type submit o con type button, porque no es solo enviar la informacion y aun no trabajamos con JS; además, de que deseo que tengan acceso al Home a traves de esa pagina -->
+        <div class="botonesIniciales">
+            <a class="botonBase"  href="./pag/home.html" target="_self">Ingresar</a><!-- Corresponde al botón que me permite ingresar al Home, si los datos ingresados son los correctos. No lo hice con Input Type submit o con type button, porque no es solo enviar la informacion y aun no trabajamos con JS; además, de que deseo que tengan acceso al Home a traves de esa pagina -->
 
-        <div class="no-ingreso"><!-- Corresponde a las opciones que no ingresas al Home -->
-            <div class="botonEspecial"><!-- Pendiente: crear un boton de reseteo -->
-                <p>Resetear</P>
-            </div>
+            <div class="no-ingreso"><!-- Corresponde a las opciones que no ingresas al Home -->
+                <div class="botonEspecial"><!-- Pendiente: crear un boton de reseteo -->
+                    <p>Resetear</P>
+                </div>
         
-            <div class="botonEspecial"><!-- Enlace para recuperar  contraseña. Pensar dónde te debe enviar el enlace -->
-                <p>¿Olvidó su contraseña?</p>
+                <div class="botonEspecial"><!-- Enlace para recuperar  contraseña. Pensar dónde te debe enviar el enlace -->
+                    <p>¿Olvidó su contraseña?</p>
+                </div>
             </div>
         </div>
      </main>

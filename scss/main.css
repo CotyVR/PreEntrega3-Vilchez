@@ -2,29 +2,34 @@
 /* Estructura general */
 header { /* Corresponde al logo de mi empresa + los enlaces entre MIS paginas*/
   background-color: rgb(188, 185, 185);
+}
+header .marcoHeader {
   padding: 10px;
   display: flex;
+  gap: 20px;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
 }
-header .logo_empresa { /* Marco del logo de la empresa */
+header .marcoHeader .logo_empresa { /* Marco del logo de la empresa */
   border: 5px solid black;
 }
-header .menu ul { /* Marco que contiene MIS enlaces del menú */
+header .marcoHeader .menu ul { /* Marco que contiene MIS enlaces del menú */
   display: flex;
   list-style: none;
   gap: 5px;
   width: 100%;
   height: auto;
+  padding: 20px 0px;
 }
-header .menu ul li a { /* Botones para cada botón */
+header .marcoHeader .menu ul li a { /* Botones para cada botón */
   text-decoration: none;
   padding: 3px 10px;
   background-color: greenyellow;
   border-radius: 20px;
 }
-header .menu ul li a:hover { /* Cambia el color del botón cuando lo toca el mouse */
+header .marcoHeader .menu ul li a:hover { /* Cambia el color del botón cuando lo toca el mouse */
   background-color: black;
   color: white;
 }
@@ -132,29 +137,55 @@ div.boxModel main form { /* Marco del formulario */
   grid-template-columns: 1fr;
   padding-bottom: 20px;
 }
+div.boxModel .botonBase { /* Botón de ingreso */
+  display: grid;
+  justify-content: center;
+}
 div.boxModel .no-ingreso { /* Formato de los botones que serian para NO ingresar */
-  justify-content: space-between;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  text-align: center;
 }
 
 /* Página "Home" */
 #datospersonales { /* Corresponde a los datos personales en el Home */
-  background-color: gold;
+  padding: 10px;
 }
-#datospersonales img { /* Corresponde al borde del avatar en el Home */
+#datospersonales .contenidoDatosPersonales {
+  background-color: gold;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  justify-content: space-between;
+}
+#datospersonales .contenidoDatosPersonales img { /* Corresponde al borde del avatar en el Home */
   width: 96px;
   height: 96px;
   border: 3px solid black;
 }
-#datospersonales h1 { /* Corresponde a los datos personales en el Home */
+#datospersonales .contenidoDatosPersonales .boxTexto, #datospersonales .contenidoDatosPersonales .boxTexto--right, #datospersonales .contenidoDatosPersonales .boxTexto--center {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2px;
+}
+#datospersonales .contenidoDatosPersonales .boxTexto h1, #datospersonales .contenidoDatosPersonales .boxTexto--right h1, #datospersonales .contenidoDatosPersonales .boxTexto--center h1 { /* Corresponde a los datos personales en el Home */
   color: blue;
+  text-align: center;
+}
+#datospersonales .contenidoDatosPersonales .boxTexto h2, #datospersonales .contenidoDatosPersonales .boxTexto--right h2, #datospersonales .contenidoDatosPersonales .boxTexto--center h2 {
+  color: black;
+}
+#datospersonales .contenidoDatosPersonales .boxTexto h3, #datospersonales .contenidoDatosPersonales .boxTexto--right h3, #datospersonales .contenidoDatosPersonales .boxTexto--center h3 {
+  color: green;
 }
 
 table { /* Corresponde a la tabla de home */
   background-color: gainsboro;
   border: aquamarine;
+  padding: 2px;
+  width: 100%;
+  text-align: center;
 }
 
 #resumentabla p {
@@ -179,21 +210,27 @@ table { /* Corresponde a la tabla de home */
   display: flex;
   justify-content: center;
 }
-#empresas_externas .agua { /* Corresponde al marco en <Enlaces_cuentas> donde se indica el logo + enlace del grupo "agua" */ }
+#empresas_externas .agua { /* Corresponde al marco en <Enlaces_cuentas> donde se indica el h2 +logo + enlace del grupo "agua" */
+  background-color: white;
+}
 #empresas_externas .agua h2 { /* Marco para "Agua" en <enlaces_cuentas>*/
   background-color: rgb(0, 149, 255);
   border-radius: 5px;
   display: flex;
   justify-content: center;
 }
-#empresas_externas .luz { /* Corresponde al marco en <Enlaces_cuentas> donde se indica el logo + enlace del grupo "Luz" */ }
+#empresas_externas .luz { /* Corresponde al marco en <Enlaces_cuentas> donde se indica el h2 + logo + enlace del grupo "Luz" */
+  background-color: white;
+}
 #empresas_externas .luz h2 { /* Marco para "Luz" en <enlaces_cuentas>*/
   background-color: rgba(255, 242, 0, 0.927);
   border-radius: 5px;
   display: flex;
   justify-content: center;
 }
-#empresas_externas .gas { /* Corresponde al marco en <Enlaces_cuentas> donde se indica el logo + enlace del grupo "Gas" */ }
+#empresas_externas .gas { /* Corresponde al marco en <Enlaces_cuentas> donde se indica el h2 + logo + enlace del grupo "Gas" */
+  background-color: white;
+}
 #empresas_externas .gas h2 { /* Marco para "Gas" en <enlaces_cuentas>*/
   background-color: orange;
   border-radius: 5px;
