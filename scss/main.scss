@@ -19,6 +19,7 @@
 
 }
 
+
 /* General: extend para textos, con class --: Recordar que cuando vayas a crear la clase en el HTML no se debe incluir el punto inicial "." */
 
 .boxTexto{/* Si hay texto, esta clase me permite crear una estructura general */
@@ -44,6 +45,7 @@
     padding: 2px 5px;
     border-radius: 20px;
     text-decoration: none;
+    text-align: center;
     font-weight: 700;
     font-family: calibri;
     justify-content: center;
@@ -65,6 +67,7 @@
     background-color: yellow;
     border: 2px solid yellow;
     color: black;
+
     &:hover{
         background-color: black;
         border: 2px solid black;
@@ -111,16 +114,13 @@ div.boxModel{/* Corresponde al margen de index o de inicio*/
 
     & .botonBase{/* Botón de ingreso */
         display: grid;
-        justify-content: center;
     }
     
     & .no-ingreso{ /* Formato de los botones que serian para NO ingresar */  
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
-        text-align: center;
     }
-  
 }
 
 
@@ -131,7 +131,6 @@ div.boxModel{/* Corresponde al margen de index o de inicio*/
 
     & .contenidoDatosPersonales{    
         background-color: gold;
-        padding: 20px;
         display: grid;
         grid-template-columns: 100px 1fr;
         justify-content: space-between;
@@ -185,6 +184,7 @@ table{/* Corresponde a la tabla de home */
         }
     }
 }
+
 
 /* Página "Enlaces cuentas" */
 
