@@ -177,7 +177,7 @@ table{/* Corresponde a la tabla de home */
             color: green;
             } @else if $estatusEstado == Pendiente {
                 color: yellow;
-            } @else if $estatusEstado == Aún_no_empieza {
+            } @else if $estatusEstado == AunNoEmpieza {
                 color: white;
             }
             @else {
