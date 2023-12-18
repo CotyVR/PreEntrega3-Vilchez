@@ -6,27 +6,30 @@
 /* Estructura general */
 @import "footergeneral";
 
-*{
+html {
+    height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: $tipografiaGeneral;
 
     body{/* Color de fondo de pantalla. Estoy pensando si lo quiero blanco o de otro color */
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
         background-color: rgb(251, 248, 248);
 
         & main{
             padding: 10px 0px;
         }
-    }
 
+    }
 }
 
 
 /* General: extend para textos, con class --: Recordar que cuando vayas a crear la clase en el HTML no se debe incluir el punto inicial "." */
 
 .boxTexto{/* Si hay texto, esta clase me permite crear una estructura general */
-    padding: 5px;
     line-height: 1;
     font-weight: 400;
 }
@@ -80,36 +83,38 @@
 
 
 /* Página index */
-div.boxModel{/* Corresponde al margen de index o de inicio*/
+
+.boxModel{/* Corresponde al margen de index o de inicio*/
     background-color: aqua;
     width: 400px;
-    height: auto;
+    height: 430px;
     margin: 100px auto;
     border: 2px solid blue;
     padding: 20px;
 
-    header {/* Borde que contiene la imagen del avatar en index */
+    & header {/* Borde que contiene la imagen del avatar en index */
+        background-color: rgba(188, 179, 179, 0.942);
         display: flex;
         flex-direction: row;
         justify-content: center;
         border: 3px solid black;
     }
 
-    h1 {/* marco del "Bienvenido" */
+    & h1 {/* marco del "Bienvenido" */
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: center; 
         padding: 10px;
     }
 
-    .divider{
+    & .divider{
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    main form{/* Marco del formulario */
+    & main form{/* Marco del formulario */
         display: grid;
         grid-template-columns: 1fr;
         padding-bottom: 20px;  
@@ -128,6 +133,11 @@ div.boxModel{/* Corresponde al margen de index o de inicio*/
 
 
 /* Página "Home" */
+
+.mainHome{/* Se creo para separar los datos de la tabla */
+display: grid;
+gap: 10px;
+}
 
 #datospersonales{/* Corresponde a los datos personales en el Home */
     padding: 5px;
@@ -176,29 +186,69 @@ div.boxModel{/* Corresponde al margen de index o de inicio*/
 }
 
 
-
-table{/* Corresponde a la tabla de home */
-    background-color: gainsboro;
+.table {/* Corresponde a la tabla de home */
     border: aquamarine;
-    padding: 2px;
-    width: 100%;
     text-align: center;
 }
 
-#resumentabla{    
-    p{
-        @if $estatusEstado == Pagado {
-            color: green;
-            } @else if $estatusEstado == Pendiente {
-                color: yellow;
-            } @else if $estatusEstado == AunNoEmpieza {
-                color: white;
-            }
-            @else {
-                color: red;
+@media (max-width: $mobile) {/* La idea es que la tabla se ajuste al celular */
+    .table{
+        width: 100%;
+        height: auto;
+    }       
+}
+
+#resumentabla1{    
+    @if $estatusEstado1 == Pagado {
+        background-color: greenyellow;
+        color: green;
+        } @else if $estatusEstado1 == Pendiente {
+            background-color: yellow;
+            color: red;
+        } @else if $estatusEstado1 == AunNoEmpieza {
+            background-color: white;
+            color: white;
         }
+        @else {
+            background-color: red;
+            color: black;
     }
 }
+
+#resumentabla2{    
+    @if $estatusEstado2 == Pagado {
+        background-color: greenyellow;
+        color: green;
+        } @else if $estatusEstado2 == Pendiente {
+            background-color: yellow;
+            color: red;
+        } @else if $estatusEstado2 == AunNoEmpieza {
+            background-color: white;
+            color: white;
+        }
+        @else {
+            background-color: red;
+            color: black;
+    }
+}
+
+#resumentabla3{    
+    @if $estatusEstado3 == Pagado {
+        background-color: greenyellow;
+        color: green;
+        } @else if $estatusEstado3 == Pendiente {
+            background-color: yellow;
+            color: red;
+        } @else if $estatusEstado3 == AunNoEmpieza {
+            background-color: white;
+            color: white;
+        }
+        @else {
+            background-color: red;
+            color: black;
+    }
+}
+
 
 
 /* Página "Enlaces cuentas" */

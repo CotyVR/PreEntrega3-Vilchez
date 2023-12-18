@@ -55,7 +55,7 @@
          </nav>
         </header>
 
-    <main>
+    <main class="mainHome">
         <section id="datospersonales"><!-- Marco de los datos -->
             <div class="contenidoDatosPersonales">
 
@@ -75,38 +75,66 @@
             </div>
         </section>
           
-        <table border="1" cellpadding="5">
+        <table class="table table-hover">
+          <thead class="table-danger"><!-- Encabezado de la tabla -->
             <tr>
-                <th>Estado (completo/incompleto)</th><!-- Encabezado de la tabla -->
-                <th>Mes</th>
-                <th>Arriendo</th>
-                <th>Gastos comunes</th>
-                <th>Luz</th>
-                <th>Agua</th>
-                <th>Gas</th>
-                <th>Internet</th>
+              <th scope="col">Estado (completo/incompleto)</th>
+              <th scope="col">Mes</th>
+              <th scope="col">Arriendo</th>
+              <th scope="col">Gastos comunes</th>
+              <th scope="col">Luz</th>
+              <th scope="col">Agua</th>
+              <th scope="col">Gas</th>
+              <th scope="col">Internet</th>
+            </tr>
+          </thead>
+          
+          <tbody>
+            <tr>
+              <th id="resumentabla1" scope="row"><strong>Completo</strong></th><!-- Fil 2 Col 1 -->
+              <td><!-- Fil 2 Col 2 (mes)-->
+                <nav id="mes">
+                      <a class="botonBase" href="./mes.html" target="_self">Mes X año Y</a><!-- Notar que el boton se creo con la clase (su estructura se encuentra en "main.scss") -->
+                  </nav> 
+              </td>
+              <td>$10</td><!-- Fil 2 Col 3 (Arriendo) -->
+              <td>$1</td> <!-- GGCC -->
+              <td>$2</td><!-- Luz -->
+              <td>$1</td><!-- Agua -->
+              <td>$3</td><!-- Gas -->
+              <td>$2</td><!-- Internet -->
             </tr>
 
             <tr>
-                <td>
-                    <div id="resumentabla">
-                        <strong><p>Completo</p></strong><!-- Fil 2 Col 1 -->
-                    </div>
-                </td>
-                <td> <!-- Fil 2 Col 2 (mes)-->
-                    <nav id="mes">
-                    <ul>
-                        <li><a class="botonBase" href="./mes.html" target="_self">Mes X año Y</a></li> <!-- Notar que el boton se creo con la clase (su estructura se encuentra en "main.scss") -->
-                    </ul>
-                    </nav> 
-                </td>
-                <td>$10</td><!-- Fil 2 Col 3 (Arriendo) -->
-                <td>$1</td> <!-- GGCC -->
-                <td>$2</td><!-- Luz -->
-                <td>$1</td><!-- Agua -->
-                <td>$3</td><!-- Gas -->
-                <td>$2</td><!-- Internet -->
+              <th id="resumentabla2" scope="row"><strong>Incompleto</strong></th><!-- Fil 3 Col 1 -->
+              <td><!-- Fil 3 Col 2 (mes)-->
+                <nav id="mes">
+                      <a class="botonBase" href="./mes.html" target="_self">Mes X año Y</a> <!-- Notar que el boton se creo con la clase (su estructura se encuentra en "main.scss") -->
+                  </nav> 
+              </td>
+              <td>$5</td><!-- Fil 3 Col 3 (Arriendo) -->
+              <td>$0</td> <!-- GGCC -->
+              <td>$3</td><!-- Luz -->
+              <td>$0</td><!-- Agua -->
+              <td>$4</td><!-- Gas -->
+              <td>$0</td><!-- Internet -->
             </tr>
+
+            <tr>
+              <th id="resumentabla3" scope="row"><strong>Aún no comienza el mes</strong></th><!-- Fil 4 Col 1 -->
+              <td><!-- Fil 4 Col 2 (mes)-->
+                <nav id="mes">
+                      <a class="botonBase" href="./mes.html" target="_self">Mes X año Y</a> <!-- Notar que el boton se creo con la clase (su estructura se encuentra en "main.scss") -->
+                  </nav> 
+              </td>
+              <td>$0</td><!-- Fil 4 Col 3 (Arriendo) -->
+              <td>$0</td> <!-- GGCC -->
+              <td>$0</td><!-- Luz -->
+              <td>$0</td><!-- Agua -->
+              <td>$0</td><!-- Gas -->
+              <td>$0</td><!-- Internet -->
+            </tr>
+          </tbody>
         </table>
     </main>
 
